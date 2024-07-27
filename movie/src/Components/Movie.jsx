@@ -1,19 +1,19 @@
 import React from 'react'
 
-const Movie = ({movie1}) => {
+const Movie = ({movie}) => {
   return (
     <div className="movie" >
             <div>
-              <p>{movie1.Year}</p>
+              <p>{movie.Year}</p>
             </div>
             <div>
-              <img src={movie1.Poster} alt={movie1.Title} />
+              <img src={movie.Poster} alt={movie.Title} />
             </div>
-            <div className="rounded-[30px] mb-2  mr-12 ml-12 ">
+            <div className="rounded-[30px] mb-4  mr-12 ml-12 ">
               <span className='flex justify-center' >
-                {movie1.Type}
+                {movie.Type}
               </span>
-              <h3>{movie1.Title}</h3>
+              <h3 className='flex justify-center '>{movie.Title}</h3>
             </div>
           </div>
   )
